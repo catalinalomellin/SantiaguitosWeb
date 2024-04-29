@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Fredoka One', cursive;
+  background-color: #F8F8F8;
+}
+
+header {
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo img {
+  height: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #333;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.menu a.active,
+.menu a:hover {
+  color: #2bd0e2;
+}
+
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #59D5E0;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.container {
+  padding: 10px;
+  background-color: rgb(246, 243, 243);
+  background: linear-gradient(180deg, #02219f 75.88%, #6044a3 75.88%, #7DD7DD 75.88%, #37B83D 75.89%, #2EB123 81.5%);
+  text-align: center;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 40px;
+  height: 400px; /* Aumenta la altura del contenedor */
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.header-user {
+  display: flex;
+  align-items: center;
+}
+
+.header-user h1 {
+ align-items: center;
+  font-size: 30px;
+  margin: 0;
+}
+
+.section img {
+  width: 100px;
+  height: 100px;
+  margin-bottom: 10px;
+  border-radius: 10px; /* Agrega bordes redondeados */
+}
+
+.section {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 60px;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.section h2{
+  margin-top: 20px;
+}
+
+.section:hover {
+  transform: scale(1.05); /* Aplica una escala al pasar el cursor */
+}
+
+.button {
+  background-color: #ffcc00;
+  color: #1d2c6f;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-wrap: wrap;
+    height: auto; /* Restaura la altura automática en dispositivos móviles */
+  }
+
+  .section {
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,132 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+ .container-opciones{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+ }
+
+ .opcion-1 img,
+ .opcion-2 img,
+ .opcion-3 img,
+ .opcion-4 img {
+   height: 100px;
+   border-radius: 50%;
+ }
+
+ .opcion-1 {
+    background-color: #F2E3AE;
+  }
+  
+  .opcion-2 {
+    background-color: #F2BAAE;
+  }
+  
+  .opcion-3 {
+    background-color: #FFC2F2;
+  }
+  
+  .opcion-4 {
+    background-color: #FCAA95;
+  }
+
+
+  .container {
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+
+  .header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .logo img {
+    height: 50px;
+  }
+
+  .menu {
+    margin-left: 20px;
+  }
+
+  .menu a {
+    color: #4A90E2;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: bold;
+  }
+
+  .user-info {
+    background-color: #D9F2FF;
+    color: #4A90E2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .user-avatar {
+    margin-right: 10px;
+  }
+
+  .user-avatar img {
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .pregunta {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #4A90E2;
+  }
+
+  .opciones {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .opcion {
+    background-color: #F5F5F5;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .opcion.selected {
+    background-color: #D9F2FF;
+  }
+
+  .opcion img {
+    height: 50px;
+    margin-right: 10px;
+  }
+
+  .enviar {
+    background-color: #4CAF50;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
